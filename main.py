@@ -20,7 +20,7 @@ giga = GigaChat(
 response = giga.get_models()
 print(response)
 
-a = 4
+a = 6
 b = 5
 
 
