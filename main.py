@@ -11,23 +11,25 @@ ssl_context.verify_mode = ssl.CERT_NONE
 
 
 giga = GigaChat(
-    credentials='MWIwYjY4ZjctYmQ1Ny00MDcyLWEzNWMtYzYwNWY4NTNjNjg5OmI4OTM4MGMxLWJkODktNGE2My05YWZlLTE5ZWQzZGMzY2JjZA==',
+    credentials='MWIwYjY4ZjctYmQ1Ny00MDcyLWEzNWMtYzYwNWY4NTNjNjg5OjQ3N2ZjZjVjLTdlZTctNGYwOC04ODM0LTMyNTM5Y2E1NGEwMA==',
     verify_ssl_certs=False,  # Отключаем проверку SSL
     ssl_context=ssl_context  # Передаем кастомный SSL контекст
 )
 
 
-response = giga.get_models()
-print(response)
+# response = giga.get_models()
+# print(response)
 
-a = 6
-b = 5
+a = 54
+b = 52
 
 
 # Используем f-string для вставки значений переменных
 response = giga.chat(f"коротко скажи сколько будет {a} + {b}")
 print(response.choices[0].message.content)
 
-result = giga.tokens_count(input_=["12345"], model="GigaChat-Pro")
-print(result)
+# result = giga.tokens_count(input_=["12345"], model="GigaChat-Pro")
+# print(result)
 
+# response = giga.get_token()
+# print(response)
